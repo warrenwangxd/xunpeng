@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" 
+         android:id="@+id/userModifyLayout">
+       <TableRow>  
+               <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp" 
+                >
+            </ImageView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入手机号订阅新发现：" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:numeric="integer"
+                android:text="" >
+            </EditText>
+          
+        </TableRow>
+       
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码：" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/pwdEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:text="" >
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名：" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/userNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别：" >
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="性别" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" >
+                </RadioButton>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让好友看到我的地理位置:" >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/locationRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="让好友看到我的地理位置" >
+
+                <RadioButton
+                    android:id="@+id/radioLocationPublicYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="是" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioLocationPublicNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="否" >
+                </RadioButton>
+            </RadioGroup>
+        </TableRow>
+<!--  v0.4版优化ui后提供该功能
+        <TableRow>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传头像" >
+            </TextView>
+
+            <Button
+                android:id="@+id/selectImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="浏览..." />
+        </TableRow>
+
+        <TableRow>          
+            <Button
+                android:id="@+id/uploadImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="上传图片" />
+               <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp" >
+            </ImageView>
+        </TableRow>
+-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消修改" >
+            </Button>
+
+            <Button
+                android:id="@+id/userModifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交修改" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
